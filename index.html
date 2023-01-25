@@ -1,14 +1,131 @@
 <!DOCTYPE html>
-<html> 
-
+<html>
 <head>
-    <meta charset=utf-8/>
+  <link rel='stylesheet' href='style_hw2.css'>
+
+  <title>hw-02</title>
+  <style>
+    /* Add styles for font */
+    * {
+      font-family: Arial;
+    }
+    /* Add styles for table */
+    table {
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+    th {
+      background-color: skyblue;
+    }
+
+    #task-abstraction div {
+      width: 50%;
+    }
+    .container {
+      flex-flow: column wrap;
+      align-items: flex-start;
+    }
+  </style>
 </head>
-
-
 <body>
+  <div id="data-abstraction">
+    <div class="info">
+      <h2 style="text-align: center;">Dataset Types</h2>
+      <table style = "width: 100%">
+        <tr style="text-align: center;">
+          <th>Data</th>
+          <th>Link</th>
+          <th>Dataset Type</th>
+        </tr>
+        <!-- Add rows for each dataset -->
+        <tr style="text-align: center;">
+          <td>UFO</td>
+          <td>
+            <a href="ufo.csv" download="UFO.csv">Link</a>
+          </td>
+          <td>Tables</td>
+        </tr>
+        <tr style="text-align: center;">
+          <td>Airports</td>
+          <td>
+            <a href="Airports.csv" download="airport_data.csv">Link</a>
+          </td>
+          <td>Geometrical</td>
+        </tr>
+        <tr style="text-align: center;">
+          <td>Google</td>
+          <td>
+            <a href="Google-Web.txt" download="google web data">Link</a>
+          </td>
+          <td>Network</td>
+        </tr>
+      </table>
+    </div>
+    <div class="info">
+      <h2 style="text-align: center;">Data Types</h2>
+      <div>
+        <h3>UFO</h3>
+        <ul>
+          <li>The rows are item data types</li>
+          <li>Attributes:</li>
+          <ul>
+            <li>Datetime: Ordered Cyclical</li>
+            <li>City: Categorical</li>
+            <li>State: Categorical</li>
+            <li>Country: Categorical</li>
+            <li>Shape: Categorical</li>
+            <li>Duration: Ordered Quantitative</li>
+          </ul>
+        </ul>
+      </div>
+      <div>
+        <h3>Airports</h3>
+        <ul>
+          <li>The Row data type for these are also items</li>
+          <li>The data types are 100% positional given that they are lat and long of airport coordinates.</li>
+          <ul>
+            <li>Airport: Categorical</li>
+            <li>Lattitude: N/A</li>
+            <li>Longituude: N/A</li>
+          </ul>
+        </ul>
+      </div>
+      <div>
+        <h3>Google</h3>
+          <ul>
+          <li>uhhh i honestly have no idea i think this is a Link</li>
+          <li>There are Links between FromNodeID to ToNodeI</li>
+          <ul>
+            <li>these are categorical</li>
+          </ul>
+        </ul>
+      </div>
+      <h2 style="text-align: center;">Task Abstraction</h2>
+      <img src="vis1.png">
+      <img src="vis2.png" height="700px" width="900px">
+      <h3 style="text-align: left;">Task Abstraction Level</h3>
+        <p>
+          I didn't want to ruin the other part of the images while I couldn't figure out the Flex containers so i created this sub heeader to not  affect the other aspects of my hw 
+        </p>
+        <p style="word-wrap: break-word;">
+          the high level task for the image on the left is to Consume and present data of the maximum daily temperatures of Vancouver. One could also make the arguement for production of a record to keep track of the other historical maximum temperatures. The mid level is for a lookup so that we can lookup the values of the most recent days and see how it compares to the other daily maximum temperatures. As for low level, I would say identify, given that the last 3 days are specficially highlighted to show contrast to the other days, so our target is an outlier. 
+        </p>
+        <p style="word-wrap: break-word;">
+          For the second image, it appears to be a presentation of data. Towards the mid level task, it appears to be a browse. And finally, on the low level, it appears to be a compare,  because they are comparing Portland to Seattle. The target is to see some simiarity or trends between the two cities.
+          </p>
+        </div>
+      <h2 style="text-align: center;">Acknowledgements</h2>
+        <p style="word-wrap: break-word;">
+        <a href="https://www.w3schools.com/">W3Schools.com</a>
+        <a href="https://www.geeksforgeeks.org/">geeksforgeeks.org</a>
+        </p>
+      </div>
+    </body>
+    </html>
 
 
-</body>
 
-</html>
+
